@@ -58,3 +58,34 @@ p {
   border: 1px solid #4c4c4c;
   font-size: calc(var(--normal-font-size) * 1.1);
 }
+
+.lower-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.title{
+    display: block;
+    width: 200px;
+}
+.animate-nav{
+    display: flex;
+    margin-top: 30px;    
+}
+
+.animated-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.animated-container p{
+    margin-left: 5px;
+}
+
+.container__icon i{
+    background-color: green;
+}
