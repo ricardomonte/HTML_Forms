@@ -56,42 +56,50 @@
         <form action=".header">
           <fieldset>
             <div class="header-form">
-              <h2 class="title-form">Crate an Intuit account</h2>
+              <h2 class="title-form">Create an Intuit account</h2>
               <p class="description-form">
                 One account for Iintuit, including Mint
               </p>
               <a href="">Learn more</a>
             </div>
-            <label class="label-email">
+            <label class="label-email lbl-position">
               Email address
               <input type="email" name="email" required />
             </label>
-            <label class="label-phone">
+            <label class="label-phone lbl-position">
               Phone (recommended)
               <input type="tel" name="phone" />
             </label>
             <span>Standard call, messging or data rates may apply</span>
             <div class="container-password">
-              <label class="label-password">
+              <label class="label-password lbl-position">
                 Password
-                <input type="password" name="password" required minlength="8" />
+                <input type="password" name="password " required minlength="8" />
               </label>
-              <div class="display-requier">
-                <div class="container-requier">
+              <div class="display-requiered">
+                <div class="container-requiered">
                   <ul class="requier-list">
                     <li class="requier-list__item">
+                      <i class="fas fa-times"></i>
                       Use 8 or more characteres
                     </li>
-                    <li class="requier-list__item">
+                    <li class="required-list__item">
+                      <i class="fas fa-times"></i>
                       Use upper and lower case letters (e.g.Aa)
                     </li>
-                    <li class="requier-list__item">Use a number(e.g. 1234)</li>
-                    <li class="requier-list__item">Use a symbol (e.g.!@#$)</li>
+                    <li class="required-list__item">
+                      <i class="fas fa-times"></i>
+                      Use a number(e.g. 1234)
+                    </li>
+                    <li class="required-list__item">
+                      <i class="fas fa-times"></i>
+                      Use a symbol (e.g.!@#$)
+                    </li>
                   </ul>
                 </div>
-                <label>
+                <label class="label-postion">
                   Confirm password
-                  <input type="password" name="confirm-password" required />
+                  <input class="pass-confirmation" type="password" name="confirm-password" required />
                 </label>
               </div>
             </div>

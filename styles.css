@@ -14,9 +14,15 @@
 }
 
 a,
-p {
+p,
+li {
   text-decoration: none;
   margin: 0;
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--body-bg-color);
 }
 
 /*
@@ -59,33 +65,108 @@ p {
   font-size: calc(var(--normal-font-size) * 1.1);
 }
 
-.lower-header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+.lower-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.title{
-    display: block;
-    width: 200px;
+.title {
+  display: block;
+  width: 200px;
 }
-.animate-nav{
-    display: flex;
-    margin-top: 30px;    
-}
-
-.animated-container{
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
+.animate-nav {
+  display: flex;
+  margin-top: 30px;
 }
 
-.animated-container p{
-    margin-left: 5px;
+.animated-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
 }
 
-.container__icon i{
-    background-color: green;
+.animated-container p {
+  margin-left: 5px;
+}
+
+.container__icon i {
+  background-color: green;
+}
+
+/*
+    =========================================
+              FORM CONTAINER 
+    ========================================
+*/
+
+.container-form {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+}
+
+form {
+  grid-column: 2;
+  padding: 1.5rem;
+  background-color: var(--form-gb-color);
+}
+
+.header-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-form {
+  font-size: 2rem;
+  color: var(--main-font-color);
+  margin-bottom: 0;
+}
+
+.description-form {
+  font-size: calc(var(--normal-font-size) * 1.2);
+}
+
+.lbl-position,
+input {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+label {
+  width: 80%;
+  margin-left: 1.5rem;
+  color: var(--main-font-color);
+}
+
+.label-phone,
+.label-password {
+  margin-top: 1.5rem;
+}
+
+fieldset span {
+  margin-left: 1.5rem;
+  font-size: var(--small-font-size);
+  color: var(--footer-text-color);
+}
+
+.display-required {
+  color: var(--footer-text-color);
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.required-list__item {
+  margin-top: 0.5rem;
+}
+
+.pass-confirmation {
+  margin-left: 1.5rem;
 }
