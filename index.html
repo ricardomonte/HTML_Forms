@@ -1,79 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="normalizer.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 
+        ===========
+        HEADER
+        ===========
+    -->
     <header class="header">
-        <nav class="nav">
-            <div class="container-logg-opt">
-                <p></p>
-                <p></p>
-            </div>
-            <button type="button" class="sing-in"></button>
-        </nav>
+      <nav class="header__nav">
+        <div class="container-log-opt">
+          <p>I already have an Intuit account?</p>
+          <a href="#">I forgot my used Id or Password?</a>
+        </div>
+        <button type="button" class="sign-in-btn btn">Sign in</button>
+      </nav>
     </header>
+    <!-- 
+            ===========
+            MAIN BODY
+            ===========
+    -->
     <main class="main">
-        <section class="lower-header">
-            <h1 class="title"></h1>
-            <nav class="animate-nav">
-                <div class="container-mint">
-                    <span class="container-mint__icon"></span>
-                    <p class="container-mint__name"></p>
+      <section class="lower-header">
+        <h1 class="title">Create an Intuit account</h1>
+        <nav class="animate-nav">
+          <div class="container-mint">
+            <span class="container-mint__icon"></span>
+            <p class="container-mint__name"></p>
+          </div>
+          <div class="container-quiq">
+            <span class="container-quiq__icon"></span>
+            <p class="container-quiq__name"></p>
+          </div>
+          <div class="container-turb">
+            <span class="container-turb__icon"></span>
+            <p class="container-turb__name"></p>
+          </div>
+        </nav>
+      </section>
+      <section class="container-form">
+        <form action=".header">
+          <fieldset>
+            <div class="header-form">
+              <h2 class="title-form">Crate an Intuit account</h2>
+              <p class="description-form">
+                One account for Iintuit, including Mint
+              </p>
+              <a href="">Learn more</a>
+            </div>
+            <label class="label-email">
+              Email address
+              <input type="email" name="email" required />
+            </label>
+            <label class="label-phone">
+              Phone (recommended)
+              <input type="tel" name="phone" />
+            </label>
+            <span>Standard call, messging or data rates may apply</span>
+            <div class="container-password">
+              <label class="label-password">
+                Password
+                <input type="password" name="password" required minlength="8" />
+              </label>
+              <div class="display-requier">
+                <div class="container-requier">
+                  <ul class="requier-list">
+                    <li class="requier-list__item">
+                      Use 8 or more characteres
+                    </li>
+                    <li class="requier-list__item">
+                      Use upper and lower case letters (e.g.Aa)
+                    </li>
+                    <li class="requier-list__item">Use a number(e.g. 1234)</li>
+                    <li class="requier-list__item">Use a symbol (e.g.!@#$)</li>
+                  </ul>
                 </div>
-                <div class="container-quiq">
-                    <span class="container-quiq__icon"></span>
-                    <p class="container-quiq__name"></p>
-                </div>
-                <div class="container-turb">
-                    <span class="container-turb__icon"></span>
-                    <p class="container-turb__name"></p>
-                </div>
-            </nav>
-        </section>
-        <section class="container-form">
-            <form action=".header">
-                <fieldset>
-                    <div class="header-form">
-                        <h2 class="title-form">Crate an Intuit account</h2>
-                        <p class="description-form">One account for Iintuit, including Mint</p>
-                        <a href="">Learn more</a>
-                    </div>
-                    <label class="label-email">
-                        Email address
-                        <input type="email" name="email" required>
-                    </label>  
-                    <label class="label-phone">
-                        Phone (recommended)
-                        <input type="tel" name="phone">
-                    </label>
-                    <span>Standar call, messging or data rates may apply</span>
-                    <div class="conatiner-password"></div>
-                        <label class="label-password">
-                            Password
-                            <input type="password" name="password" required minlength="8">
-                        </label>
-                        <div class="display-requier">
-                            <div class="container-requier">
-                                <ul class="requier-list">
-                                    <li class="requier-list__item"> Use 8 or more characteres</li>
-                                    <li class="requier-list__item">Use upper and lower case letters (e.g.Aa)</li>
-                                    <li class="requier-list__item">Use a number(e.g. 1234)</li>
-                                    <li class="requier-list__item">Use a symbol (e.g.!@#$)</li>
-                                </ul>
-                            </div>
-                            <label>
-                                Confirm password
-                                <input type="password" name="confirm-password" required>
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
+                <label>
+                  Confirm password
+                  <input type="password" name="confirm-password" required />
+                </label>
+              </div>
+            </div>
+            <button type="button" class="fomt-button btn">
+              Create Account
+            </button>
+            <div class="terms">
+              <p class="terms__conditions">
+                By clicking Create account, you agree to out
+                <a href="#">Terms</a>
+                and have read and acknowledge out
+                <a href="#">Privacy Statement.</a>
+              </p>
+            </div>
+            <div class="form-footer">
+              <p>
+                invisible reCAPTCHA by Google
+                <a href="#">Privacy Policy</a> and
+                <a href="#">Terms of Use.</a>
+              </p>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    
-</body>
+
+    <!-- 
+                ===========
+                FOOTER
+                ===========
+        -->
+    <footer class="footer">
+      <div class="footer__legal-buttons">
+        <button type="button" class="legal">Legal</button>
+        <button type="button" class="privacy">Privacy</button>
+        <button type="button" class="Security">Security</button>
+      </div>
+      <p class="copy-right">
+        <span class="copy-right__icon">
+          C
+        </span>
+        2020 intuit, Inc. All rights reserved Intuit, QuickBooks, QB, TurboTax,
+        Proconnect and Mint are registered trademarks of Intuit Inc. Terms and
+        conditions, features, support, pricing, and service options subject to
+        change without notice.
+      </p>
+    </footer>
+  </body>
 </html>

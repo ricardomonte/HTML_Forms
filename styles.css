@@ -1,0 +1,61 @@
+:root {
+  --body-bg-color: #eceef1;
+  --form-gb-color: #fff;
+  --warning-color: #eb3432;
+  --main-font-color: #404040;
+  --footer-text-color: #444;
+  --nav-bar-font-color: #000;
+  --bg-button-color: #0077c5;
+  --h1-font-size: 1.8rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.3rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.6rem;
+}
+
+a,
+p {
+  text-decoration: none;
+  margin: 0;
+}
+
+/*
+    =========================================
+        HEADER BUTTON
+    ========================================
+*/
+
+.header,
+.header__nav {
+  width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+  margin-top: 1rem;
+}
+
+.container-log-opt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.btn {
+  background-color: var(--bg-button-color);
+  color: var(--form-gb-color);
+  padding: 0 1.2rem;
+  border-radius: 0.5em;
+}
+
+.sign-in-btn {
+  margin: 0 1.9rem 0 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #4c4c4c;
+  font-size: calc(var(--normal-font-size) * 1.1);
+}
