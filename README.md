@@ -1,12 +1,8 @@
 # HTML_Forms
 
-# Embedding-images-and-video
-
 This project is based on the real Youtube website. It was design in order to practice HTML and css. It has a basic structure, such us a navbar, a section, an aside and a footer.
 
-![website screenshots](/screenshots/index.png)
-![website screenshots](/screenshots/index2.png)
-![website screenshots](/screenshots/index3.png)
+![website screenshots](/img/screenshot.png)
 
 ## Built with:
 
