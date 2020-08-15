@@ -23,8 +23,7 @@ li {
 
 body {
   background-color: var(--body-bg-color);
-  font-family: AvenirNext, Avenir, 'Helvetica Neue', Helvetica, Arial,
-    sans-serif;
+  font-family: AvenirNext, Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -184,6 +183,7 @@ fieldset span,
 
 .display-required {
   color: var(--footer-text-color);
+  display: none;
 }
 
 input[type='email'],
@@ -292,7 +292,6 @@ ul {
   position: fixed;
   bottom: 0;
   right: 4.5em;
-
   background: #6b6c72;
   color: white;
   padding: 0.75rem;
@@ -300,12 +299,13 @@ ul {
   font-size: 14px;
 }
 
-.pass-confirm {
-  margin-left: 0;
+.container-password {
+  margin-left: 1.5rem;
+  width: 100%;
 }
 
-.display-required {
-  display: none;
+.pass-confirm {
+  margin-left: 0;
 }
 
 .container-password input:focus ~ .display-required {
