@@ -3,7 +3,7 @@
   --form-gb-color: #fff;
   --warning-color: #eb3432;
   --main-font-color: #404040;
-  --footer-text-color: #444;
+  --footer-text-color: #a9a9a9;
   --nav-bar-font-color: #000;
   --bg-button-color: #0077c5;
   --h1-font-size: 1.8rem;
@@ -23,6 +23,8 @@ li {
 
 body {
   background-color: var(--body-bg-color);
+  font-family: AvenirNext, Avenir, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
 }
 
 /*
@@ -48,7 +50,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 12px;
 }
 
 .btn {
@@ -62,7 +64,11 @@ body {
   margin: 0 1.9rem 0 0.5rem;
   border-radius: 4px;
   border: 1px solid #4c4c4c;
-  font-size: calc(var(--normal-font-size) * 1.1);
+  font-size: calc(var(--normal-font-size) * 0.8);
+}
+
+.sign-in-btn i {
+  margin-right: 0.5rem;
 }
 
 .lower-header {
@@ -70,16 +76,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
-.title {
+.lower-header__img {
   display: block;
-  width: 200px;
+  width: 10rem;
 }
+
 .animate-nav {
-  display: flex;
+  width: 30%;
   margin-top: 30px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .animated-container {
@@ -90,27 +101,34 @@ body {
 
 .animated-container p {
   margin-left: 5px;
+  font-size: calc(var(--normal-font-size) * 1.2);
 }
 
-.container__icon i {
-  background-color: green;
+.animated-container__logo {
+  width: 23px;
 }
 
 /*
     =========================================
-              FORM CONTAINER 
+              FORM CONTAINER
     ========================================
 */
-
 .container-form {
   display: grid;
-  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-columns: 3fr 3fr 3fr;
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  padding: 0;
+  width: 380px;
+  background-color: var(--form-gb-color);
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
 }
 
 form {
   grid-column: 2;
-  margin: 1.5rem;
-  background-color: var(--form-gb-color);
 }
 
 .header-form {
@@ -121,13 +139,22 @@ form {
 }
 
 .title-form {
-  font-size: 2rem;
+  font-size: var(--h2-font-size);
   color: var(--main-font-color);
   margin-bottom: 0;
+  font-weight: lighter;
 }
 
 .description-form {
-  font-size: calc(var(--normal-font-size) * 1.2);
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.description-form a {
+  font-size: 12px;
+  color: #0077c5;
 }
 
 .lbl-position,
@@ -136,7 +163,8 @@ input {
   margin-top: 0.6rem;
 }
 
-label, .form-button{
+label,
+.form-button {
   width: 100%;
   margin-left: 1.5rem;
   color: var(--main-font-color);
@@ -147,7 +175,8 @@ label, .form-button{
   margin-top: 1.5rem;
 }
 
-fieldset span, .terms, .form-footer {
+fieldset span,
+.terms {
   margin-left: 1.5rem;
   font-size: var(--small-font-size);
   color: var(--footer-text-color);
@@ -157,14 +186,23 @@ fieldset span, .terms, .form-footer {
   color: var(--footer-text-color);
 }
 
-input{
-    width: 80%;
+input[type='email'],
+input[type='tel'],
+input[type='password'] {
+  width: 80%;
+  border: 1px solid var(--footer-text-color);
+}
+
+input:focus {
+  box-shadow: 0 0 3px 3px var(--bg-button-color);
+  background: #fff;
 }
 
 ul {
   padding-left: 0;
   margin-left: 1.5rem;
   font-size: 0.8rem;
+  color: var(--footer-text-color);
 }
 
 .required-list__item {
@@ -175,26 +213,39 @@ ul {
   margin-left: 1.5rem;
 }
 
-.form-button{
-    color: var(--form-gb-color);
-    padding: 0.5rem;
-    margin-top: 1.8rem;
-    width: 85%;
+.form-button {
+  color: var(--form-gb-color);
+  padding: 0.5rem;
+  margin-top: 0.5em;
+  width: 85%;
 }
 
-.terms, .form-footer{
-    text-align: center;
-    margin: 2rem auto 0 auto;
+/*
+    ======================================
+        TERMS AND CONDITIONS
+    ======================================
+*/
+
+.terms {
+  text-align: center;
+  margin: 2rem auto 0 auto;
 }
 
-.terms__conditions{
-    padding: 0 2.5rem;
-    line-height:2em;
+.terms__conditions {
+  padding: 0 2.5rem;
+  line-height: 2em;
 }
 
-.form-footer{
-    padding: 0;
-    background-color: #eceef1;
-    /* line-height: 30px; */
-    width: 100%;
+/*
+    ======================================
+          FOOTER FORM
+    ======================================
+*/
+
+.form-footer {
+  background-color: var(--body-bg-color);
+  font-size: var(--small-font-size);
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.5rem;
 }

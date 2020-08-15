@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"> 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="normalizer.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -17,10 +22,13 @@
     <header class="header">
       <nav class="header__nav">
         <div class="container-log-opt">
-          <p>I already have an Intuit account?</p>
-          <a href="#">I forgot my used Id or Password?</a>
+          <p>Already have an Intuit account?</p>
+          <a href="#">I Forgot my used Id or Password</a>
         </div>
-        <button type="button" class="sign-in-btn btn">Sign in</button>
+        <button type="button" class="sign-in-btn btn">
+          <i class="fas fa-lock"></i>
+          Sign in
+        </button>
       </nav>
     </header>
     <!-- 
@@ -30,25 +38,35 @@
     -->
     <main class="main">
       <section class="lower-header">
-        <img class="title" src="https://logos-download.com/wp-content/uploads/2016/05/Intuit_logo_logotype-700x222.png" ></img>
+        <img
+          class="lower-header__img"
+          src="data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjUzLjk1IDEyNC42NCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2YzZlNzB9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxvZ29fQ2xlYXJzcGFjZSIgZGF0YS1uYW1lPSJMb2dvICZhbXA7IENsZWFyc3BhY2UiPjxnIGlkPSJMb2dvIj48cGF0aCBpZD0iXyIgZGF0YS1uYW1lPSLCriIgY2xhc3M9ImNscy0xIiBkPSJNNDg1LjQzLDMyOC40YTAuOTQsMC45NCwwLDAsMC0xLjExLS44OGgtMXYzaDAuNTN2LTEuMjVoMC4zOWwwLjcsMS4yNWgwLjY1bC0wLjgxLTEuMzFBMC43OSwwLjc5LDAsMCwwLDQ4NS40MywzMjguNFptLTEuNjIuNDNWMzI4aDAuNDlhMC40OCwwLjQ4LDAsMCwxLC41OS40MSwwLjUzLDAuNTMsMCwwLDEtLjY1LjQ0aC0wLjQzWm0wLjUtMi40NUEyLjY0LDIuNjQsMCwxLDAsNDg3LDMyOSwyLjY1LDIuNjUsMCwwLDAsNDg0LjMxLDMyNi4zOFptMCw0Ljg5YTIuMjQsMi4yNCwwLDEsMSwyLjI0LTIuMjRBMi4yNSwyLjI1LDAsMCwxLDQ4NC4zMSwzMzEuMjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY5LjAyIC0yNDMuNjgpIi8+PHBhdGggaWQ9IkludHVpdCIgY2xhc3M9ImNscy0xIiBkPSJNMzA1LDI5NS4yN2g5djM2aC05di0zNlptMzguMDktMS4wNUExMi4yNiwxMi4yNiwwLDAsMCwzMzEuOTQsMzAxaC0wLjE1di01Ljc3aC04LjU1djM2aDl2LTE5LjhjMC00LjgsMi43LTkuNzUsOC40LTkuNzVzNi43NSw1LjMzLDYuNzUsOS42djIwaDl2LTIyLjVDMzU2LjM5LDMwMS40MiwzNTIuNDksMjk0LjIyLDM0My4xMiwyOTQuMjJabTc3LjQ2LDIwLjg1YzAsNC44LTIuNyw5Ljc1LTguNCw5Ljc1cy02Ljc1LTUuMzItNi43NS05LjZ2LTIwaC05djIyLjVjMCw3LjM1LDMuOSwxNC41NSwxMy4yOCwxNC41NWExMi4yNSwxMi4yNSwwLDAsMCwxMS4xNy02LjgzSDQyMXY1Ljc4aDguNTV2LTM2aC05djE5LjhabTE4LjIxLDE2LjJoOXYtMzZoLTl2MzZabS03Ny44MS0yOGgxMC4wOXYyOGg5di0yOGgxMC4wOXYtOEgzNjF2OFptMTQuNTktMTIuNjdhNS40NCw1LjQ0LDAsMSwwLTUuNDQtNS40NEE1LjQ0LDUuNDQsMCwwLDAsMzc1LjU3LDI5MC41NlptNzguNTMsNC42OXY4aDEwLjA5djI4aDl2LTI4aDEwLjA5di04SDQ1NC4xWm0xNC41OS00LjY5YTUuNDQsNS40NCwwLDEsMC01LjQ0LTUuNDRBNS40NCw1LjQ0LDAsMCwwLDQ2OC42OSwyOTAuNTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY5LjAyIC0yNDMuNjgpIi8+PC9nPjxwYXRoIGlkPSJDbGVhcnNwYWNlIiBmaWxsPSJub25lIiBkPSJNMCAwSDI1My45NVYxMjQuNjRIMHoiLz48L2c+PC9zdmc+"
+          alt="company logo"
+        />
         <nav class="animate-nav">
           <div class="animated-container">
-            <span class="container__icon">
-                <i class="fas fa-tint"></i>
-            </span>
-            <p class="container-mint__name">Mint</p>
+            <img
+              class="animated-container__logo"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiMwMEE2QTQiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTAgMi43NzdjLS42NTguNjYtNS4xNzQgNS4zMDktNS4xNzQgOC45MyAwIDIuNTc4IDIuMDU1IDMuNDMyIDUuMTc0IDUuNTU0IDMuMTItMi4xMjIgNS4xNzQtMi45NzYgNS4xNzQtNS41NTQgMC0zLjYyMS00LjUxNS04LjI3LTUuMTc0LTguOTN6bTAgMTIuNzQ4bC0uNjA3LS4zOTdjLTIuMzItMS41MTEtMy4xMjMtMi4xMDEtMy4xMjMtMy40MjEgMC0yLjA0NCAyLjAyOC00Ljg4OCAzLjczLTYuODE2djEwLjYzNHoiLz48L2c+PC9zdmc+"
+              alt=""
+            />
+            <p class="container-mint__name">mint</p>
           </div>
           <div class="animated-container">
-            <span class="container__icon">
-                <i class="fas fa-check-circle"></i> 
-            </span>
-            <p class="container-quiq__name">Quiqbooks</p>
+            <img
+              class="animated-container__logo"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01OTguNSA5NzEuNSA1MCA1MCI+PGNpcmNsZSBjeD0iLTU3My41IiBjeT0iOTk2LjUiIHI9IjI1IiBmaWxsPSIjMmNhMDFjIi8+PHBhdGggZD0iTS01OTEuNSw5OTYuNWMwLDUuNCw0LjQsOS44LDkuOCw5LjhoMS40di0zLjZoLTEuNGMtMy40LDAtNi4yLTIuOC02LjItNi4yczIuOC02LjIsNi4yLTYuMmgzLjQgYzAsMCwwLDE4LjYsMCwxOC44YzAsMiwxLjYsMy42LDMuNiwzLjZ2LTI2LjJjMCwwLTMuOCwwLTcsMEMtNTg3LjMsOTg2LjctNTkxLjUsOTkxLjEtNTkxLjUsOTk2LjV6IE0tNTY1LjEsOTg2LjdoLTEuNHYzLjZoMS40IGMzLjQsMCw2LjIsMi44LDYuMiw2LjJzLTIuOCw2LjItNi4yLDYuMmgtMy40YzAsMCwwLTE4LjYsMC0xOC44YzAtMi0xLjYtMy42LTMuNi0zLjZ2MjYuMmMwLDAsMy44LDAsNywwYzUuNCwwLDkuOC00LjQsOS44LTkuOCBDLTU1NS41LDk5MS4xLTU1OS43LDk4Ni43LTU2NS4xLDk4Ni43eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+              alt=""
+            />
+            <p class="container-quiq__name">quiqbooks</p>
           </div>
           <div class="animated-container">
-            <span class="container__icon">
-                <i class="fas fa-check-circle"></i> 
-            </span>
-            <p class="container-turb__name">Turbotax</p>
+            <img
+              class="animated-container__logo"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01OTguNSA5NzEuNSA1MCA1MCI+PGNpcmNsZSBjeD0iLTU3My41IiBjeT0iOTk2LjUiIHI9IjI1IiBmaWxsPSIjZDUyYjFlIi8+PHBhdGggZD0iTS01NzkuMSwxMDA1LjdjLTIuOC0yLTUuNi00LjItOC4yLTYuNmMtMSwyLjItMS44LDQuNC0yLjYsNi42YzQuMiwzLjYsOS44LDcuNiwxMy44LDEwIGM1LTEzLDEyLjgtMjEuNCwyMC40LTI3LjRjLTEtMi0yLjItMy44LTMuOC01LjRDLTU2Ny43LDk4OC45LTU3NC4zLDk5Ni43LTU3OS4xLDEwMDUuN3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
+              alt=""
+            />
+            <p class="container-turb__name">turbotax</p>
           </div>
         </nav>
       </section>
@@ -56,11 +74,11 @@
         <form action=".header">
           <fieldset>
             <div class="header-form">
-              <h2 class="title-form">Create an Intuit account</h2>
-              <p class="description-form">
+              <h1 class="title-form">Create an Intuit account</h1>
+              <h2 class="description-form">
                 One account for Iintuit, including Mint
-              </p>
-              <a href="">Learn more</a>
+                <a href="#">Learn more</a>
+              </h2>
             </div>
             <label class="label-email lbl-position">
               Email address
@@ -74,7 +92,12 @@
             <div class="container-password">
               <label class="label-password lbl-position">
                 Password
-                <input type="password" name="password " required minlength="8" />
+                <input
+                  type="password"
+                  name="password "
+                  required
+                  minlength="8"
+                />
               </label>
               <div class="display-requiered">
                 <div class="container-requiered">
@@ -99,11 +122,16 @@
                 </div>
                 <label class="label-postion">
                   Confirm password
-                  <input class="pass-confirmation" type="password" name="confirm-password" required />
+                  <input
+                    class="pass-confirmation"
+                    type="password"
+                    name="confirm-password"
+                    required
+                  />
                 </label>
               </div>
             </div>
-    <!-- 
+            <!-- 
                 ===========
                 Button
                 ===========
@@ -118,15 +146,15 @@
                 and have read and acknowledge out
                 <a href="#">Privacy Statement.</a>
               </p>
-            </div>
-            <div class="form-footer">
               <p>
+              </div>
+              <div class="form-footer">
                 invisible reCAPTCHA by Google
                 <a href="#">Privacy Policy</a> and
                 <a href="#">Terms of Use.</a>
               </p>
             </div>
-          </fieldset>
+            </fieldset>
         </form>
       </section>
     </main>
