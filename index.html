@@ -89,54 +89,60 @@
               <input type="tel" name="phone" />
             </label>
             <span>Standard call, messging or data rates may apply</span>
-            <div class="container-password">
-              <label class="label-password lbl-position">
+            <div class="container-password" tabindex="0">
+              <label class="label-password lbl-position" >
                 Password
                 <input
                   type="password"
                   name="password "
                   required
                   minlength="8"
+                  
                 />
               </label>
-              <div class="display-requiered">
-                <div class="container-requiered">
-                  <ul class="requier-list">
-                    <li class="required-list__item">
-                      <i class="fas fa-times"></i>
-                      Use 8 or more characteres
-                    </li>
-                    <li class="required-list__item">
-                      <i class="fas fa-times"></i>
-                      Use upper and lower case letters (e.g.Aa)
-                    </li>
-                    <li class="required-list__item">
-                      <i class="fas fa-times"></i>
-                      Use a number(e.g. 1234)
-                    </li>
-                    <li class="required-list__item">
-                      <i class="fas fa-times"></i>
-                      Use a symbol (e.g.!@#$)
-                    </li>
-                  </ul>
-                </div>
-                <label class="label-postion">
-                  Confirm password
-                  <input
-                    class="pass-confirmation"
-                    type="password"
-                    name="confirm-password"
-                    required
-                  />
-                </label>
-              </div>
             </div>
+
+              <!-- DISPLAY REQUIREMENTS -->
+
+            <div class="display-required">
+              <div class="container-requiered">
+                <ul class="requier-list">
+                  <li class="required-list__item">
+                    <i class="fas fa-times"></i>
+                    Use 8 or more characteres
+                  </li>
+                  <li class="required-list__item">
+                    <i class="fas fa-times"></i>
+                    Use upper and lower case letters (e.g.Aa)
+                  </li>
+                  <li class="required-list__item">
+                    <i class="fas fa-times"></i>
+                    Use a number(e.g. 1234)
+                  </li>
+                  <li class="required-list__item">
+                    <i class="fas fa-times"></i>
+                    Use a symbol (e.g.!@#$)
+                  </li>
+                </ul>
+              </div>
+              <label class="label-postion">
+                Confirm password
+                <input
+                  class="pass-confirmation"
+                  type="password"
+                  name="confirm-password"
+                  required
+                />
+              </label>
+            </div>
+            
             <!-- 
                 ===========
                 Button
                 ===========
         -->
             <button type="button" class="form-button btn">
+              <i class="fas fa-lock"></i>
               Create Account
             </button>
             <div class="terms">
@@ -181,6 +187,9 @@
         conditions, features, support, pricing, and service options subject to
         change without notice.
       </p>
+
+      <!-- FIXED BUTTON -->
+      <div class="fixed-button">Privacy Settings</div>
     </footer>
   </body>
 </html>

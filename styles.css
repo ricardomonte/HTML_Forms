@@ -56,7 +56,7 @@ body {
 .btn {
   background-color: var(--bg-button-color);
   color: var(--form-gb-color);
-  padding: 0 1.2rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 0.5em;
 }
 
@@ -193,10 +193,10 @@ input[type='password'] {
   border: 1px solid var(--footer-text-color);
 }
 
-input:focus {
+/* input:focus {
   box-shadow: 0 0 3px 3px var(--bg-button-color);
   background: #fff;
-}
+} */
 
 ul {
   padding-left: 0;
@@ -218,6 +218,11 @@ ul {
   padding: 0.5rem;
   margin-top: 0.5em;
   width: 85%;
+}
+
+.form-button i {
+  font-size: 12px;
+  margin-right: 0.5rem;
 }
 
 /*
@@ -250,37 +255,37 @@ ul {
   padding: 1.5rem;
 }
 
-.footer{
+.footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
 
-.footer__legal-list{
+.footer__legal-list {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.list-legal{
-  width:100%;
+.list-legal {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.list-legal li{
-  margin-right: .5rem;
-} 
+.list-legal li {
+  margin-right: 0.5rem;
+}
 
-.list-legal li a{
+.list-legal li a {
   color: var(--main-font-color);
 }
 
-.copy-right{
+.copy-right {
   width: 45%;
   text-align: center;
   padding-bottom: 1.3rem;
@@ -288,3 +293,22 @@ ul {
   color: var(--main-font-color);
 }
 
+.fixed-button {
+  position: fixed;
+  bottom: 0;
+  right: 4.5em;
+
+  background: #6b6c72;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.display-required {
+  display: none;
+}
+
+.label-password > input:focus ~ .display-required {
+  display: block;
+}
