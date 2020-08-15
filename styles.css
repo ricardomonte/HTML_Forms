@@ -249,3 +249,42 @@ ul {
   margin-top: 2rem;
   padding: 1.5rem;
 }
+
+.footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:2rem;
+}
+
+.footer__legal-list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-legal{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.list-legal li{
+  margin-right: .5rem;
+} 
+
+.list-legal li a{
+  color: var(--main-font-color);
+}
+
+.copy-right{
+  width: 45%;
+  text-align: center;
+  padding-bottom: 1.3rem;
+  font-size: 12px;
+  color: var(--main-font-color);
+}
+
