@@ -193,24 +193,19 @@ input[type='password'] {
   border: 1px solid var(--footer-text-color);
 }
 
-/* input:focus {
+input:focus {
   box-shadow: 0 0 3px 3px var(--bg-button-color);
   background: #fff;
-} */
+}
 
 ul {
   padding-left: 0;
-  margin-left: 1.5rem;
   font-size: 0.8rem;
   color: var(--footer-text-color);
 }
 
 .required-list__item {
   margin-top: 0.5rem;
-}
-
-.pass-confirmation {
-  margin-left: 1.5rem;
 }
 
 .form-button {
@@ -305,10 +300,14 @@ ul {
   font-size: 14px;
 }
 
+.pass-confirm {
+  margin-left: 0;
+}
+
 .display-required {
   display: none;
 }
 
-.label-password > input:focus ~ .display-required {
+.container-password input:focus ~ .display-required {
   display: block;
 }
