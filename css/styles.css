@@ -23,8 +23,7 @@ li {
 
 body {
   background-color: var(--body-bg-color);
-  font-family: AvenirNext, Avenir, 'Helvetica Neue', Helvetica, Arial,
-    sans-serif;
+  font-family: AvenirNext, Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 i {
@@ -36,7 +35,6 @@ i {
         HEADER BUTTON
     ========================================
 */
-
 .width-100 {
   width: 100%;
 }
@@ -101,7 +99,6 @@ i {
               FORM CONTAINER
     ========================================
 */
-
 .container-form {
   display: grid;
   grid-template-columns: 3fr 3fr 3fr;
@@ -117,6 +114,7 @@ i {
   padding: 0;
   margin: 0 auto;
   background-color: var(--form-gb-color);
+  border: 1px solid #c0c0c0;
 }
 
 .form-title {
@@ -145,6 +143,7 @@ label,
 
 label > input {
   margin-top: 0.6rem;
+  border: 1px solid #c0c0c0;
 }
 
 .email-lbl,
@@ -173,6 +172,11 @@ label > input {
   display: none;
 }
 
+.pass-lbl-display {
+  display: none;
+  margin-left: 1.2rem;
+}
+
 .requirement-list__item {
   font-size: 12px;
   color: var(--footer-text-color);
@@ -182,9 +186,13 @@ input[type='password']:focus ~ .requirement-list {
   display: block;
 }
 
+input[type='password']:focus ~ .pass-lbl-display {
+  display: block;
+}
+
 .form-btn {
   width: 83%;
-  margin-left: 1.2rem;
+  margin: 1.5rem 0 0 1.2rem;
 }
 
 /*
@@ -192,7 +200,6 @@ input[type='password']:focus ~ .requirement-list {
         TERMS AND CONDITIONS
     ======================================
 */
-
 .footer-container {
   font-size: 12px;
   margin-top: 1.2rem;
@@ -215,9 +222,10 @@ input[type='password']:focus ~ .requirement-list {
   background-color: var(--body-bg-color);
   font-size: var(--small-font-size);
 }
+
 /*
     ======================================
-          FOOTER 
+          FOOTER
     ======================================
 */
 
@@ -229,6 +237,7 @@ input[type='password']:focus ~ .requirement-list {
 .list-legal {
   display: flex;
   justify-content: center;
+  margin-bottom: 0.2rem;
 }
 
 .list-legal li {
@@ -257,8 +266,3 @@ input[type='password']:focus ~ .requirement-list {
   border-radius: 4px;
   font-size: 14px;
 }
-
-.pass-confirm {
-  margin-left: 0;
-}
-
