@@ -72,40 +72,89 @@
         </nav>
       </section>
       <section class="container-form">
-        <!-- FORMA -->
-        <form class="form" action="./header">
-          <hgroup>
-            <h1 class="form-title">Create an Intuit account</h1>
-            <h2 class="form-subtitle">
-              One account for everything Intuit, including Mint
-              <a href="#">learn more</a>
-            </h2>
-          </hgroup>
-          <label class="email-lbl">
-            Email address
-            <input type="email" />
-          </label>
-          <label class="tel-lbl">
-            Phone (recommended)
-            <input type="tel" />
-            <span>Stanrdard call. messaging or data rates may apply</span>
-          </label>
-          <label class="pass-lbl">
-            Password
-            <input type="password" />
-          </label>
-          <ul class="requirements-list">
-            <li class="requirements-lsit__item">Use 8 or more characters</li>
-            <li class="requirements-lsit__item">
-              User upper and lower case letter (e.g Aa)
-            </li>
-            <li class="requirements-lsit__item">Use a number (e.g 1234)</li>
-            <li class="requirements-lsit__item">Use a symbol (e.g !@#$)</li>
-          </ul>
-          <label class="pass-lbl">
-            Password
-            <input type="password" />
-          </label>
+        <!-- FORM -->
+        <form class="form width-100" action="./header">
+          <fieldset>
+            <hgroup>
+              <h1 class="form-title">Create an Intuit account</h1>
+              <h2 class="form-subtitle">
+                One account for everything Intuit, including Mint
+                <a href="#">learn more</a>
+              </h2>
+              <h3 class="form-subtitle">
+                Already have and account?
+                <a href="#">Sign In</a>
+              </h3>
+            </hgroup>
+            <label class="email-lbl">
+              Email address
+              <input type="email" />
+            </label>
+            <label class="tel-lbl">
+              Phone (recommended)
+              <input type="tel" />
+              <span class="tel-lbl__footer"
+                >Stanrdard call. messaging or data rates may apply</span
+              >
+            </label>
+            <label for="password" class="pass-lbl">
+              Password
+            </label>
+            <div class="pass-container">
+              <input type="password" class="pass-input" id="password" />
+
+              <!-- 
+              requirements list display
+                      -->
+
+              <ul class="requirement-list display">
+                <li class="requirement-list__item">
+                  <i class="fas fa-times"></i>
+                  Use 8 or more characters
+                </li>
+                <li class="requirement-list__item">
+                  <i class="fas fa-times"></i>
+                  User upper and lower case letter (e.g Aa)
+                </li>
+                <li class="requirement-list__item">
+                  <i class="fas fa-times"></i>
+                  Use a number (e.g 1234)
+                </li>
+                <li class="requirement-list__item">
+                  <i class="fas fa-times"></i>
+                  Use a symbol (e.g !@#$)
+                </li>
+                <label class="pass-lbl-display width-100" tabindex="0">
+                  Password
+                  <input type="password" />
+                </label>
+              </ul>
+            </div>
+            <button type="button" class="form-btn btn">
+              <i class="fas fa-lock"></i>
+              Create Account
+            </button>
+
+            <!-- 
+              ==============
+                FOOTER FORM 
+              ==============
+            -->
+            <div class="footer-container">
+              <p class="terms">
+                By clicking Create account you agree to our
+                <a href="#">Terms</a>
+                and have read and acknowledge our
+                <a href="#">Privacy Statement</a>
+              </p>
+              <p class="captcha">
+                Invisible reCAPTCHA by Google
+                <a href="#">Privacy Policy</a>
+                and
+                <a href="#">Terms of Use</a>
+              </p>
+            </div>
+          </fieldset>
         </form>
       </section>
     </main>

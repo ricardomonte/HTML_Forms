@@ -23,7 +23,8 @@ li {
 
 body {
   background-color: var(--body-bg-color);
-  font-family: AvenirNext, Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: AvenirNext, Avenir, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
 }
 
 i {
@@ -36,8 +37,7 @@ i {
     ========================================
 */
 
-
-.width-100{
+.width-100 {
   width: 100%;
 }
 
@@ -69,9 +69,6 @@ i {
   border: 1px solid #4c4c4c;
   font-size: calc(var(--normal-font-size) * 0.8);
 }
-
-
-
 
 .lower-header__img {
   display: block;
@@ -105,6 +102,90 @@ i {
     ========================================
 */
 
+.container-form {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+}
+
+.form {
+  grid-column: 2;
+  margin-top: 1.5rem;
+}
+
+.form fieldset {
+  width: 380px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: var(--form-gb-color);
+}
+
+.form-title {
+  font-size: var(--h2-font-size);
+  color: var(--main-font-color);
+  text-align: center;
+  font-weight: lighter;
+}
+
+.form-subtitle {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 0 2rem;
+  font-weight: lighter;
+}
+
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+label,
+.pass-container {
+  display: block;
+  width: 90%;
+}
+
+label > input {
+  margin-top: 0.6rem;
+}
+
+.email-lbl,
+.tel-lbl,
+.pass-lbl,
+.pass-lbl-display {
+  display: block;
+  margin: 0.9rem auto 0;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pass-input {
+  display: block;
+  margin: 1.2rem;
+}
+
+.tel-lbl__footer {
+  font-size: var(--small-font-size);
+  color: var(--footer-text-color);
+}
+
+.requirement-list {
+  padding-left: 0;
+  margin: 1.2rem;
+  display: none;
+}
+
+.requirement-list__item {
+  font-size: 12px;
+  color: var(--footer-text-color);
+}
+
+input[type='password']:focus ~ .requirement-list {
+  display: block;
+}
+
+.form-btn {
+  width: 83%;
+  margin-left: 1.2rem;
+}
 
 /*
     ======================================
@@ -112,29 +193,33 @@ i {
     ======================================
 */
 
-/* .terms {
-  text-align: center;
-  margin: 2rem auto 0 auto;
+.footer-container {
+  font-size: 12px;
+  margin-top: 1.2rem;
+  color: #000;
 }
 
-.terms__conditions {
-  padding: 0 2.5rem;
-  line-height: 2em;
-} */
-
-/*
-    ======================================
-          FOOTER FORM
-    ======================================
-*/
-
-/* .form-footer {
-  background-color: var(--body-bg-color);
-  font-size: var(--small-font-size);
+.terms,
+.captcha {
   text-align: center;
-  margin-top: 2rem;
   padding: 1.5rem;
 }
+
+.terms {
+  width: 70%;
+  line-height: 21px;
+  margin: 0 auto;
+}
+
+.captcha {
+  background-color: var(--body-bg-color);
+  font-size: var(--small-font-size);
+}
+/*
+    ======================================
+          FOOTER 
+    ======================================
+*/
 
 .footer {
   width: 100%;
@@ -196,4 +281,4 @@ i {
 
 .container-password input:focus ~ .display-required {
   display: block;
-} */
+}
