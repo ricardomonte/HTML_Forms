@@ -222,7 +222,6 @@ input[type='password']:focus ~ .requirement-list {
 */
 
 .footer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,14 +230,12 @@ input[type='password']:focus ~ .requirement-list {
 }
 
 .footer__legal-list {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .list-legal {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
