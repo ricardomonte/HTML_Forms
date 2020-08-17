@@ -15,9 +15,11 @@
 
 a,
 p,
-li {
+li,
+ul {
   text-decoration: none;
   margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -108,15 +110,17 @@ i {
 
 .form {
   grid-column: 2;
-  margin-top: 1.5rem;
 }
 
 .form fieldset {
+  margin: 1.5rem auto 0;
+  padding: 0;
   width: 380px;
-  /* padding: 0;
-  margin: 0 auto; */
   background-color: var(--form-gb-color);
-  border: 1px solid #c0c0c0;
+}
+
+.upper-form {
+  padding: 0 1.5rem;
 }
 
 .form-title {
@@ -134,67 +138,51 @@ i {
   font-weight: lighter;
 }
 
-input[type='email'],
-input[type='tel'],
-input[type='password'],
+hgroup {
+  margin-bottom: 1.2rem;
+}
+
+input {
+  height: 1.8rem;
+  width: 98%;
+}
+
 label,
-.pass-container {
+input {
   display: block;
-  width: 90%;
+  margin-top: 1.2rem;
 }
 
-label > input {
-  margin-top: 0.6rem;
-  border: 1px solid #c0c0c0;
-}
-
-.email-lbl,
-.tel-lbl,
-.pass-lbl,
-.pass-lbl-display {
-  display: block;
-  margin: 0.9rem auto 0;
-  font-size: 14px;
-  font-weight: lighter;
-}
-
-.pass-input {
-  display: block;
-  margin: 1.2rem;
-}
-
-.tel-lbl__footer {
+.tel-lbl span {
   font-size: var(--small-font-size);
-  color: var(--footer-text-color);
 }
 
 .requirement-list {
-  padding-left: 0;
-  margin: 1.2rem;
-  display: none;
-}
-
-.pass-lbl-display {
-  display: none;
-  margin-left: 1.2rem;
-}
-
-.requirement-list__item {
-  font-size: 12px;
+  margin-top: 1.5rem;
   color: var(--footer-text-color);
+  font-size: var(--normal-font-size);
+}
+
+.pass-lbl {
+  margin-top: 1.5rem;
+}
+
+.form-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+}
+
+.requirement-list,
+.input-display {
+  display: none;
 }
 
 input[type='password']:focus ~ .requirement-list {
   display: block;
 }
 
-input[type='password']:focus ~ .pass-lbl-display {
+input[type='password']:focus ~ .pass-lbl {
   display: block;
-}
-
-.form-btn {
-  width: 83%;
-  margin: 1.5rem 0 0 1.2rem;
 }
 
 /*
@@ -215,14 +203,15 @@ input[type='password']:focus ~ .pass-lbl-display {
 }
 
 .terms {
-  width: 70%;
   line-height: 21px;
   margin: 0 auto;
 }
 
 .captcha {
   background-color: var(--body-bg-color);
+  color: var(--footer-text-color);
   font-size: var(--small-font-size);
+  padding: 1.5rem;
 }
 
 /*
