@@ -69,9 +69,11 @@ i {
 }
 
 .lower-header__img {
-  display: block;
-  width: 10rem;
-  margin: 0 auto;
+  color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjUzLjk1IDEyNC42NCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2YzZlNzB9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxvZ29fQ2xlYXJzcGFjZSIgZGF0YS1uYW1lPSJMb2dvICZhbXA7IENsZWFyc3BhY2UiPjxnIGlkPSJMb2dvIj48cGF0aCBpZD0iXyIgZGF0YS1uYW1lPSLCriIgY2xhc3M9ImNscy0xIiBkPSJNNDg1LjQzLDMyOC40YTAuOTQsMC45NCwwLDAsMC0xLjExLS44OGgtMXYzaDAuNTN2LTEuMjVoMC4zOWwwLjcsMS4yNWgwLjY1bC0wLjgxLTEuMzFBMC43OSwwLjc5LDAsMCwwLDQ4NS40MywzMjguNFptLTEuNjIuNDNWMzI4aDAuNDlhMC40OCwwLjQ4LDAsMCwxLC41OS40MSwwLjUzLDAuNTMsMCwwLDEtLjY1LjQ0aC0wLjQzWm0wLjUtMi40NUEyLjY0LDIuNjQsMCwxLDAsNDg3LDMyOSwyLjY1LDIuNjUsMCwwLDAsNDg0LjMxLDMyNi4zOFptMCw0Ljg5YTIuMjQsMi4yNCwwLDEsMSwyLjI0LTIuMjRBMi4yNSwyLjI1LDAsMCwxLDQ4NC4zMSwzMzEuMjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY5LjAyIC0yNDMuNjgpIi8+PHBhdGggaWQ9IkludHVpdCIgY2xhc3M9ImNscy0xIiBkPSJNMzA1LDI5NS4yN2g5djM2aC05di0zNlptMzguMDktMS4wNUExMi4yNiwxMi4yNiwwLDAsMCwzMzEuOTQsMzAxaC0wLjE1di01Ljc3aC04LjU1djM2aDl2LTE5LjhjMC00LjgsMi43LTkuNzUsOC40LTkuNzVzNi43NSw1LjMzLDYuNzUsOS42djIwaDl2LTIyLjVDMzU2LjM5LDMwMS40MiwzNTIuNDksMjk0LjIyLDM0My4xMiwyOTQuMjJabTc3LjQ2LDIwLjg1YzAsNC44LTIuNyw5Ljc1LTguNCw5Ljc1cy02Ljc1LTUuMzItNi43NS05LjZ2LTIwaC05djIyLjVjMCw3LjM1LDMuOSwxNC41NSwxMy4yOCwxNC41NWExMi4yNSwxMi4yNSwwLDAsMCwxMS4xNy02LjgzSDQyMXY1Ljc4aDguNTV2LTM2aC05djE5LjhabTE4LjIxLDE2LjJoOXYtMzZoLTl2MzZabS03Ny44MS0yOGgxMC4wOXYyOGg5di0yOGgxMC4wOXYtOEgzNjF2OFptMTQuNTktMTIuNjdhNS40NCw1LjQ0LDAsMSwwLTUuNDQtNS40NEE1LjQ0LDUuNDQsMCwwLDAsMzc1LjU3LDI5MC41NlptNzguNTMsNC42OXY4aDEwLjA5djI4aDl2LTI4aDEwLjA5di04SDQ1NC4xWm0xNC41OS00LjY5YTUuNDQsNS40NCwwLDEsMC01LjQ0LTUuNDRBNS40NCw1LjQ0LDAsMCwwLDQ2OC42OSwyOTAuNTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY5LjAyIC0yNDMuNjgpIi8+PC9nPjxwYXRoIGlkPSJDbGVhcnNwYWNlIiBmaWxsPSJub25lIiBkPSJNMCAwSDI1My45NVYxMjQuNjRIMHoiLz48L2c+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-position: center top;
+  transform: scale(3);
 }
 
 .animate-nav {
@@ -111,8 +113,8 @@ i {
 
 .form fieldset {
   width: 380px;
-  padding: 0;
-  margin: 0 auto;
+  /* padding: 0;
+  margin: 0 auto; */
   background-color: var(--form-gb-color);
   border: 1px solid #c0c0c0;
 }
@@ -238,6 +240,7 @@ input[type='password']:focus ~ .pass-lbl-display {
   display: flex;
   justify-content: center;
   margin-bottom: 0.2rem;
+  padding-left: 0;
 }
 
 .list-legal li {
