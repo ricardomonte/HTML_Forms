@@ -222,17 +222,8 @@ input[type='password']:focus ~ .requirement-list {
 */
 
 .footer {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 2rem;
-}
-
-.footer__legal-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .list-legal {
@@ -267,15 +258,7 @@ input[type='password']:focus ~ .requirement-list {
   font-size: 14px;
 }
 
-.container-password {
-  margin-left: 1.5rem;
-  width: 100%;
-}
-
 .pass-confirm {
   margin-left: 0;
 }
 
-.container-password input:focus ~ .display-required {
-  display: block;
-}
