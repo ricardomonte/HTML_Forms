@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="normalizer.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- 
         ===========
         HEADER
         ===========
     -->
-    <header class="header">
-      <nav class="header__nav">
-        <div class="container-log-opt">
+    <header class="header width-100">
+      <nav class="header__nav flex-center width-100">
+        <div class="container-log-opt .flex-center">
           <p>Already have an Intuit account?</p>
           <a href="#">I Forgot my used Id or Password</a>
         </div>
@@ -43,7 +44,7 @@
           src="data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjUzLjk1IDEyNC42NCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2YzZlNzB9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxvZ29fQ2xlYXJzcGFjZSIgZGF0YS1uYW1lPSJMb2dvICZhbXA7IENsZWFyc3BhY2UiPjxnIGlkPSJMb2dvIj48cGF0aCBpZD0iXyIgZGF0YS1uYW1lPSLCriIgY2xhc3M9ImNscy0xIiBkPSJNNDg1LjQzLDMyOC40YTAuOTQsMC45NCwwLDAsMC0xLjExLS44OGgtMXYzaDAuNTN2LTEuMjVoMC4zOWwwLjcsMS4yNWgwLjY1bC0wLjgxLTEuMzFBMC43OSwwLjc5LDAsMCwwLDQ4NS40MywzMjguNFptLTEuNjIuNDNWMzI4aDAuNDlhMC40OCwwLjQ4LDAsMCwxLC41OS40MSwwLjUzLDAuNTMsMCwwLDEtLjY1LjQ0aC0wLjQzWm0wLjUtMi40NUEyLjY0LDIuNjQsMCwxLDAsNDg3LDMyOSwyLjY1LDIuNjUsMCwwLDAsNDg0LjMxLDMyNi4zOFptMCw0Ljg5YTIuMjQsMi4yNCwwLDEsMSwyLjI0LTIuMjRBMi4yNSwyLjI1LDAsMCwxLDQ4NC4zMSwzMzEuMjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY5LjAyIC0yNDMuNjgpIi8+PHBhdGggaWQ9IkludHVpdCIgY2xhc3M9ImNscy0xIiBkPSJNMzA1LDI5NS4yN2g5djM2aC05di0zNlptMzguMDktMS4wNUExMi4yNiwxMi4yNiwwLDAsMCwzMzEuOTQsMzAxaC0wLjE1di01Ljc3aC04LjU1djM2aDl2LTE5LjhjMC00LjgsMi43LTkuNzUsOC40LTkuNzVzNi43NSw1LjMzLDYuNzUsOS42djIwaDl2LTIyLjVDMzU2LjM5LDMwMS40MiwzNTIuNDksMjk0LjIyLDM0My4xMiwyOTQuMjJabTc3LjQ2LDIwLjg1YzAsNC44LTIuNyw5Ljc1LTguNCw5Ljc1cy02Ljc1LTUuMzItNi43NS05LjZ2LTIwaC05djIyLjVjMCw3LjM1LDMuOSwxNC41NSwxMy4yOCwxNC41NWExMi4yNSwxMi4yNSwwLDAsMCwxMS4xNy02LjgzSDQyMXY1Ljc4aDguNTV2LTM2aC05djE5LjhabTE4LjIxLDE2LjJoOXYtMzZoLTl2MzZabS03Ny44MS0yOGgxMC4wOXYyOGg5di0yOGgxMC4wOXYtOEgzNjF2OFptMTQuNTktMTIuNjdhNS40NCw1LjQ0LDAsMSwwLTUuNDQtNS40NEE1LjQ0LDUuNDQsMCwwLDAsMzc1LjU3LDI5MC41NlptNzguNTMsNC42OXY4aDEwLjA5djI4aDl2LTI4aDEwLjA5di04SDQ1NC4xWm0xNC41OS00LjY5YTUuNDQsNS40NCwwLDEsMC01LjQ0LTUuNDRBNS40NCw1LjQ0LDAsMCwwLDQ2OC42OSwyOTAuNTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY5LjAyIC0yNDMuNjgpIi8+PC9nPjxwYXRoIGlkPSJDbGVhcnNwYWNlIiBmaWxsPSJub25lIiBkPSJNMCAwSDI1My45NVYxMjQuNjRIMHoiLz48L2c+PC9zdmc+"
           alt="company logo"
         />
-        <nav class="animate-nav">
+        <nav class="animate-nav flex-center">
           <div class="animated-container">
             <img
               class="animated-container__logo"
@@ -71,94 +72,40 @@
         </nav>
       </section>
       <section class="container-form">
-        <form action=".header">
-          <fieldset>
-            <div class="header-form">
-              <h1 class="title-form">Create an Intuit account</h1>
-              <h2 class="description-form">
-                One account for Iintuit, including Mint
-                <a href="#">Learn more</a>
-              </h2>
-            </div>
-            <label class="label-email lbl-position">
-              Email address
-              <input type="email" name="email" required />
-            </label>
-            <label class="label-phone lbl-position">
-              Phone (recommended)
-              <input type="tel" name="phone" />
-            </label>
-            <span>Standard call, messging or data rates may apply</span>
-            <div class="container-password">
-              <div class="label-password lbl-position" tabindex="0">
-                Password
-                <input
-                  type="password"
-                  name="password "
-                  required
-                  minlength="8"
-                />
-
-                <div class="display-required">
-                  <div class="container-requiered">
-                    <ul class="requiered-list">
-                      <li class="required-list__item">
-                        <i class="fas fa-times"></i>
-                        Use 8 or more characteres
-                      </li>
-                      <li class="required-list__item">
-                        <i class="fas fa-times"></i>
-                        Use upper and lower case letters (e.g.Aa)
-                      </li>
-                      <li class="required-list__item">
-                        <i class="fas fa-times"></i>
-                        Use a number(e.g. 1234)
-                      </li>
-                      <li class="required-list__item">
-                        <i class="fas fa-times"></i>
-                        Use a symbol (e.g.!@#$)
-                      </li>
-                    </ul>
-                  </div>
-                  <label class="pass-confirm">
-                    Confirm password
-                    <input
-                      class="pass-confirmation"
-                      type="password"
-                      name="confirm-password"
-                      required
-                    />
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <!-- DISPLAY REQUIREMENTS -->
-
-            <!-- 
-                ===========
-                Button
-                ===========
-        -->
-            <button type="button" class="form-button btn">
-              <i class="fas fa-lock"></i>
-              Create Account
-            </button>
-            <div class="terms">
-              <p class="terms__conditions">
-                By clicking Create account, you agree to out
-                <a href="#">Terms</a>
-                and have read and acknowledge out
-                <a href="#">Privacy Statement.</a>
-              </p>
-            </div>
-
-            <div class="form-footer">
-              invisible reCAPTCHA by Google
-              <a href="#">Privacy Policy</a> and
-              <a href="#">Terms of Use.</a>
-            </div>
-          </fieldset>
+        <!-- FORMA -->
+        <form class="form" action="./header">
+          <hgroup>
+            <h1 class="form-title">Create an Intuit account</h1>
+            <h2 class="form-subtitle">
+              One account for everything Intuit, including Mint
+              <a href="#">learn more</a>
+            </h2>
+          </hgroup>
+          <label class="email-lbl">
+            Email address
+            <input type="email" />
+          </label>
+          <label class="tel-lbl">
+            Phone (recommended)
+            <input type="tel" />
+            <span>Stanrdard call. messaging or data rates may apply</span>
+          </label>
+          <label class="pass-lbl">
+            Password
+            <input type="password" />
+          </label>
+          <ul class="requirements-list">
+            <li class="requirements-lsit__item">Use 8 or more characters</li>
+            <li class="requirements-lsit__item">
+              User upper and lower case letter (e.g Aa)
+            </li>
+            <li class="requirements-lsit__item">Use a number (e.g 1234)</li>
+            <li class="requirements-lsit__item">Use a symbol (e.g !@#$)</li>
+          </ul>
+          <label class="pass-lbl">
+            Password
+            <input type="password" />
+          </label>
         </form>
       </section>
     </main>
