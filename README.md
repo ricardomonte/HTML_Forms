@@ -1,6 +1,6 @@
 # HTML_Forms
 
-This project is based on the real Youtube website. It was design in order to practice HTML and css. It has a basic structure, such us a navbar, a section, an aside and a footer.
+This project is based on the real Mint sing up website. It was designed in order to practice HTML Forms and CSS. it has a basic structure such a navbar, section and footer.
 
 ![website screenshots](/img/screenshot.png)
 
